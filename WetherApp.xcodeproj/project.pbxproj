@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE68F2B2269FFC4000FC5E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2B1269FFC4000FC5E38 /* AppDelegate.swift */; };
+		DE68F2B4269FFC4000FC5E38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2B3269FFC4000FC5E38 /* SceneDelegate.swift */; };
+		DE68F2B6269FFC4000FC5E38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2B5269FFC4000FC5E38 /* ViewController.swift */; };
+		DE68F2B9269FFC4000FC5E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE68F2B7269FFC4000FC5E38 /* Main.storyboard */; };
+		DE68F2BB269FFC4800FC5E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE68F2BA269FFC4800FC5E38 /* Assets.xcassets */; };
+		DE68F2BE269FFC4800FC5E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE68F2BC269FFC4800FC5E38 /* LaunchScreen.storyboard */; };
+		DE68F2C9269FFC4900FC5E38 /* WetherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2C8269FFC4900FC5E38 /* WetherAppTests.swift */; };
+		DE68F2D4269FFC4900FC5E38 /* WetherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2D3269FFC4900FC5E38 /* WetherAppUITests.swift */; };
+		DE68F2E2269FFCCE00FC5E38 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2E1269FFCCE00FC5E38 /* Extension.swift */; };
+		DE68F2E6269FFDD300FC5E38 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2E5269FFDD300FC5E38 /* WeatherVC.swift */; };
+		DE68F2E8269FFEF400FC5E38 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2E7269FFEF400FC5E38 /* WeatherCell.swift */; };
+		DE68F2EA269FFF3D00FC5E38 /* WeatherDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2E9269FFF3D00FC5E38 /* WeatherDataVC.swift */; };
+		DE68F2EC269FFF8A00FC5E38 /* CityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2EB269FFF8A00FC5E38 /* CityDetail.swift */; };
+		DE68F2EE269FFFB200FC5E38 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68F2ED269FFFB200FC5E38 /* ApiHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE68F2C5269FFC4900FC5E38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE68F2A6269FFC4000FC5E38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE68F2AD269FFC4000FC5E38;
+			remoteInfo = WetherApp;
+		};
+		DE68F2D0269FFC4900FC5E38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE68F2A6269FFC4000FC5E38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE68F2AD269FFC4000FC5E38;
+			remoteInfo = WetherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE68F2AE269FFC4000FC5E38 /* WetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE68F2B1269FFC4000FC5E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE68F2B3269FFC4000FC5E38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE68F2B5269FFC4000FC5E38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE68F2B8269FFC4000FC5E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE68F2BA269FFC4800FC5E38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE68F2BD269FFC4800FC5E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE68F2BF269FFC4800FC5E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE68F2C4269FFC4900FC5E38 /* WetherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WetherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE68F2C8269FFC4900FC5E38 /* WetherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherAppTests.swift; sourceTree = "<group>"; };
+		DE68F2CA269FFC4900FC5E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE68F2CF269FFC4900FC5E38 /* WetherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WetherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE68F2D3269FFC4900FC5E38 /* WetherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherAppUITests.swift; sourceTree = "<group>"; };
+		DE68F2D5269FFC4900FC5E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE68F2E1269FFCCE00FC5E38 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		DE68F2E5269FFDD300FC5E38 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
+		DE68F2E7269FFEF400FC5E38 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		DE68F2E9269FFF3D00FC5E38 /* WeatherDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataVC.swift; sourceTree = "<group>"; };
+		DE68F2EB269FFF8A00FC5E38 /* CityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetail.swift; sourceTree = "<group>"; };
+		DE68F2ED269FFFB200FC5E38 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE68F2AB269FFC4000FC5E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE68F2C1269FFC4900FC5E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE68F2CC269FFC4900FC5E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE68F2A5269FFC4000FC5E38 = {
+			isa = PBXGroup;
+			children = (
+				DE68F2B0269FFC4000FC5E38 /* WetherApp */,
+				DE68F2C7269FFC4900FC5E38 /* WetherAppTests */,
+				DE68F2D2269FFC4900FC5E38 /* WetherAppUITests */,
+				DE68F2AF269FFC4000FC5E38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE68F2AF269FFC4000FC5E38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE68F2AE269FFC4000FC5E38 /* WetherApp.app */,
+				DE68F2C4269FFC4900FC5E38 /* WetherAppTests.xctest */,
+				DE68F2CF269FFC4900FC5E38 /* WetherAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE68F2B0269FFC4000FC5E38 /* WetherApp */ = {
+			isa = PBXGroup;
+			children = (
+				DE68F34D26A0172500FC5E38 /* Extra */,
+				DE68F2B3269FFC4000FC5E38 /* SceneDelegate.swift */,
+				DE68F2B5269FFC4000FC5E38 /* ViewController.swift */,
+				DE68F2E5269FFDD300FC5E38 /* WeatherVC.swift */,
+				DE68F2E7269FFEF400FC5E38 /* WeatherCell.swift */,
+				DE68F2E9269FFF3D00FC5E38 /* WeatherDataVC.swift */,
+				DE68F2EB269FFF8A00FC5E38 /* CityDetail.swift */,
+				DE68F2ED269FFFB200FC5E38 /* ApiHandler.swift */,
+				DE68F2B7269FFC4000FC5E38 /* Main.storyboard */,
+				DE68F2BA269FFC4800FC5E38 /* Assets.xcassets */,
+				DE68F2BC269FFC4800FC5E38 /* LaunchScreen.storyboard */,
+				DE68F2BF269FFC4800FC5E38 /* Info.plist */,
+			);
+			path = WetherApp;
+			sourceTree = "<group>";
+		};
+		DE68F2C7269FFC4900FC5E38 /* WetherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE68F2C8269FFC4900FC5E38 /* WetherAppTests.swift */,
+				DE68F2CA269FFC4900FC5E38 /* Info.plist */,
+			);
+			path = WetherAppTests;
+			sourceTree = "<group>";
+		};
+		DE68F2D2269FFC4900FC5E38 /* WetherAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE68F2D3269FFC4900FC5E38 /* WetherAppUITests.swift */,
+				DE68F2D5269FFC4900FC5E38 /* Info.plist */,
+			);
+			path = WetherAppUITests;
+			sourceTree = "<group>";
+		};
+		DE68F34D26A0172500FC5E38 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				DE68F2B1269FFC4000FC5E38 /* AppDelegate.swift */,
+				DE68F2E1269FFCCE00FC5E38 /* Extension.swift */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE68F2AD269FFC4000FC5E38 /* WetherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE68F2D8269FFC4900FC5E38 /* Build configuration list for PBXNativeTarget "WetherApp" */;
+			buildPhases = (
+				DE68F2AA269FFC4000FC5E38 /* Sources */,
+				DE68F2AB269FFC4000FC5E38 /* Frameworks */,
+				DE68F2AC269FFC4000FC5E38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WetherApp;
+			productName = WetherApp;
+			productReference = DE68F2AE269FFC4000FC5E38 /* WetherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE68F2C3269FFC4900FC5E38 /* WetherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE68F2DB269FFC4900FC5E38 /* Build configuration list for PBXNativeTarget "WetherAppTests" */;
+			buildPhases = (
+				DE68F2C0269FFC4900FC5E38 /* Sources */,
+				DE68F2C1269FFC4900FC5E38 /* Frameworks */,
+				DE68F2C2269FFC4900FC5E38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE68F2C6269FFC4900FC5E38 /* PBXTargetDependency */,
+			);
+			name = WetherAppTests;
+			productName = WetherAppTests;
+			productReference = DE68F2C4269FFC4900FC5E38 /* WetherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE68F2CE269FFC4900FC5E38 /* WetherAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE68F2DE269FFC4900FC5E38 /* Build configuration list for PBXNativeTarget "WetherAppUITests" */;
+			buildPhases = (
+				DE68F2CB269FFC4900FC5E38 /* Sources */,
+				DE68F2CC269FFC4900FC5E38 /* Frameworks */,
+				DE68F2CD269FFC4900FC5E38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE68F2D1269FFC4900FC5E38 /* PBXTargetDependency */,
+			);
+			name = WetherAppUITests;
+			productName = WetherAppUITests;
+			productReference = DE68F2CF269FFC4900FC5E38 /* WetherAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE68F2A6269FFC4000FC5E38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DE68F2AD269FFC4000FC5E38 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					DE68F2C3269FFC4900FC5E38 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DE68F2AD269FFC4000FC5E38;
+					};
+					DE68F2CE269FFC4900FC5E38 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DE68F2AD269FFC4000FC5E38;
+					};
+				};
+			};
+			buildConfigurationList = DE68F2A9269FFC4000FC5E38 /* Build configuration list for PBXProject "WetherApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE68F2A5269FFC4000FC5E38;
+			productRefGroup = DE68F2AF269FFC4000FC5E38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE68F2AD269FFC4000FC5E38 /* WetherApp */,
+				DE68F2C3269FFC4900FC5E38 /* WetherAppTests */,
+				DE68F2CE269FFC4900FC5E38 /* WetherAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE68F2AC269FFC4000FC5E38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE68F2BE269FFC4800FC5E38 /* LaunchScreen.storyboard in Resources */,
+				DE68F2BB269FFC4800FC5E38 /* Assets.xcassets in Resources */,
+				DE68F2B9269FFC4000FC5E38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE68F2C2269FFC4900FC5E38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE68F2CD269FFC4900FC5E38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE68F2AA269FFC4000FC5E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE68F2B6269FFC4000FC5E38 /* ViewController.swift in Sources */,
+				DE68F2E6269FFDD300FC5E38 /* WeatherVC.swift in Sources */,
+				DE68F2B2269FFC4000FC5E38 /* AppDelegate.swift in Sources */,
+				DE68F2B4269FFC4000FC5E38 /* SceneDelegate.swift in Sources */,
+				DE68F2EC269FFF8A00FC5E38 /* CityDetail.swift in Sources */,
+				DE68F2E2269FFCCE00FC5E38 /* Extension.swift in Sources */,
+				DE68F2EE269FFFB200FC5E38 /* ApiHandler.swift in Sources */,
+				DE68F2EA269FFF3D00FC5E38 /* WeatherDataVC.swift in Sources */,
+				DE68F2E8269FFEF400FC5E38 /* WeatherCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE68F2C0269FFC4900FC5E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE68F2C9269FFC4900FC5E38 /* WetherAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE68F2CB269FFC4900FC5E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE68F2D4269FFC4900FC5E38 /* WetherAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE68F2C6269FFC4900FC5E38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE68F2AD269FFC4000FC5E38 /* WetherApp */;
+			targetProxy = DE68F2C5269FFC4900FC5E38 /* PBXContainerItemProxy */;
+		};
+		DE68F2D1269FFC4900FC5E38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE68F2AD269FFC4000FC5E38 /* WetherApp */;
+			targetProxy = DE68F2D0269FFC4900FC5E38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE68F2B7269FFC4000FC5E38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE68F2B8269FFC4000FC5E38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE68F2BC269FFC4800FC5E38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE68F2BD269FFC4800FC5E38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE68F2D6269FFC4900FC5E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE68F2D7269FFC4900FC5E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE68F2D9269FFC4900FC5E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WetherApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jinal.WetherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE68F2DA269FFC4900FC5E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WetherApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jinal.WetherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE68F2DC269FFC4900FC5E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WetherAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jinal.WetherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WetherApp.app/WetherApp";
+			};
+			name = Debug;
+		};
+		DE68F2DD269FFC4900FC5E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WetherAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jinal.WetherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WetherApp.app/WetherApp";
+			};
+			name = Release;
+		};
+		DE68F2DF269FFC4900FC5E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WetherAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jinal.WetherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WetherApp;
+			};
+			name = Debug;
+		};
+		DE68F2E0269FFC4900FC5E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WetherAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Jinal.WetherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WetherApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE68F2A9269FFC4000FC5E38 /* Build configuration list for PBXProject "WetherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE68F2D6269FFC4900FC5E38 /* Debug */,
+				DE68F2D7269FFC4900FC5E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE68F2D8269FFC4900FC5E38 /* Build configuration list for PBXNativeTarget "WetherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE68F2D9269FFC4900FC5E38 /* Debug */,
+				DE68F2DA269FFC4900FC5E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE68F2DB269FFC4900FC5E38 /* Build configuration list for PBXNativeTarget "WetherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE68F2DC269FFC4900FC5E38 /* Debug */,
+				DE68F2DD269FFC4900FC5E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE68F2DE269FFC4900FC5E38 /* Build configuration list for PBXNativeTarget "WetherAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE68F2DF269FFC4900FC5E38 /* Debug */,
+				DE68F2E0269FFC4900FC5E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE68F2A6269FFC4000FC5E38 /* Project object */;
+}
