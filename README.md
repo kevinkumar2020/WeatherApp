@@ -1,5 +1,12 @@
 # WeatherApp
 
+### UIElements Used in Application:
+
+* UILabel
+* UIButton
+* UIImageView
+* UISearchBar
+
 ### Application View
 
 ![1](https://user-images.githubusercontent.com/66861727/125763944-653255bd-992f-4604-933e-3a6f01eb652b.PNG)
